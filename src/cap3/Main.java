@@ -2,10 +2,23 @@ package cap3;
 
 public class Main {
     public static void main(String[] args){
-
-
-    }
+        /*
+        Dog[] dog = new Dog[7];
+        dog[2] = new Dog();
+        dog[2].nameDog();
+        dog[3] = dog[2];
+        dog[3].nameOwer();
+    }*/
 }
+        /*class Dog{
+            void nameDog(){
+                System.out.println("mike");
+            }
+            void nameOwer(){
+                System.out.println("adrean");
+            } */
+
+        }
 /*
 
             Sharpen your pencil Page 52
