@@ -1,24 +1,37 @@
 package cap3;
+class Main {
+    String name;
 
-public class Main {
     public static void main(String[] args){
-        /*
-        Dog[] dog = new Dog[7];
-        dog[2] = new Dog();
-        dog[2].nameDog();
-        dog[3] = dog[2];
-        dog[3].nameOwer();
-    }*/
-}
-        /*class Dog{
-            void nameDog(){
-                System.out.println("mike");
-            }
-            void nameOwer(){
-                System.out.println("adrean");
-            } */
+        Main dog1 = new Main();
+        dog1.bark();
+        dog1.name = "Mike";
 
+        Main[] myDogs = new Main[3];
+        myDogs[0] = new Main();
+        myDogs[1] = new Main();
+        myDogs[2] = new Main();
+
+        myDogs[0].name ="Gamora";
+        myDogs[1]= dog1;
+        myDogs[2].name = "Margot";
+
+        System.out.println("The name of the middle dog is " + myDogs[1].name);
+
+        byte x = 0;
+        while(x<myDogs.length){
+            myDogs[x].bark();
+            x++;
         }
+    }
+
+    public void bark(){
+        if(name == null){
+            name = "nameless";
+        }
+        System.out.println(name + " says woof woof");
+    }}
+
 /*
 
             Sharpen your pencil Page 52
